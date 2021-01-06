@@ -28,11 +28,6 @@ body {
     text-shadow: 4px 4px 5px black, 0 0 25px #e84118, 0 0 5px #fbc531;
 }
 
-a {
-    font-size: 67px;
-    padding: 270px;
-}
-
 @keyframes slideright {
     from {
         background-position: 70000%;
@@ -48,7 +43,24 @@ a {
     background-image: url(background.png);
     background-size: cover;
     background-repeat: repeat-x;
-    animation: slideright 600s infinite linear;
     width: 100%;
-    height: 670px;
+    height: 900px;
 }
+
+.cardcustom {
+    margin: 4px 7px 2px 4px;
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 75px 12px 30px;
+    cursor: pointer;
+  }
+  
+    .cardcustom:hover {
+        transform: scale(1.02);
+        background-image: linear-gradient(#17a2b8, #bdc3c7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
